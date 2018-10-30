@@ -1,2 +1,5 @@
-<h1>Hello World</h1>
-<h2>This Application contains only one component that is Root Component</h2>
+<div class="container">
+<h1>Parent to child Communication and vice versa</h1>
+<app-child (childEvent)="message=$event" [parentName]="name"></app-child>
+<p>{{message}}</p>
+</div>
