@@ -1,5 +1,7 @@
 <div class="container">
 <h1>Parent to child Communication and vice versa</h1>
+
+<p *ngIf="message">This data came from child:--{{message}} </p>
 <app-child (childEvent)="message=$event" [parentName]="name"></app-child>
-<p>{{message}}</p>
+
 </div>
